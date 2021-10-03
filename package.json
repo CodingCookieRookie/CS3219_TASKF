@@ -1,0 +1,45 @@
+{
+  "name": "resthub",
+  "version": "1.0.0",
+  "description": "CS3219 B1 demonstrating simple Restful API ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha -exit"
+  },
+  "author": "Alvin Chee Teck Weng",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongo": "^0.1.0",
+    "mongodb": "^4.1.2",
+    "mongoose": "^6.0.6",
+    "node-java-maven": "^0.1.2",
+    "react-bootstrap": "^2.0.0-rc.0",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.1.1",
+    "nodemon": "^2.0.12"
+  },
+  "java": {
+    "dependencies": [
+      {
+        "groupId": "org.apache.lucene",
+        "artifactId": "lucene-core",
+        "version": "4.9.0"
+      }
+    ]
+  }
+}
