@@ -10,13 +10,12 @@ const expiration = 3600; //Expiration = 1hour
 
 exports.index = function (req, res) {
     redisClient.get("contacts", async (err, data) => {
-        
         if (err) {
-            failureJson(res, err);
+            console.log(err);
         } else if (data) {
             res.json({
                 status: "success",
-                message: "Users retrieved successfully!",
+                message: "Contacts retrieved successfully!",
                 data: JSON.parse(data)
             });
         } else {
